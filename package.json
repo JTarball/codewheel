@@ -1,0 +1,33 @@
+{
+  "name": "codewheel",
+  "version": "1.0.0",
+  "description": "This is a starter kit for a frontend based on React.js, Redux, Babel/ES2015, Webpack and Mocha.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:clean": "rimraf _book",
+    "docs:prebuild": "gitbook install",
+    "docs:build": "gitbook build -g jtarball/codewheel",
+    "docs:serve": "gitbook serve",
+    "docs:publish": "npm run docs:clean && npm run docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout && touch .nojekyll && git add . && git commit -am 'update book' && git push git@github.com:jtarball/codewheel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JTarball/codewheel.git"
+  },
+  "author": "James Tarball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JTarball/codewheel/issues"
+  },
+  "homepage": "https://github.com/JTarball/codewheel#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "rimraf": "^2.4.4",
+    "gitbook-cli": "^1.0.0"
+  }
+}

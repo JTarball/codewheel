@@ -1,0 +1,14 @@
+
+
+ENV_TYPE=dev
+APP_DIR=/app
+CIRCLE_TEST_REPORTS=/app/backend/circle-junit
+BACKEND_DIR=/app/backend
+
+
+
+
+
+
+
+

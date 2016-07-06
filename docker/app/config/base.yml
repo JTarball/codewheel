@@ -1,0 +1,4 @@
+app:
+    build: ..
+    environment:
+       APP_DIR: /app

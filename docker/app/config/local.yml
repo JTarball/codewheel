@@ -1,0 +1,12 @@
+app:
+    extends:
+        file: ./base.yml
+        service: app
+    restart: always
+    ports:
+        - "3000:3000"
+        - "8080:8080"
+    environment:
+        ENV_TYPE: local
+    volumes:
+    - ../src:/app
